@@ -112,21 +112,3 @@ for selected_model in available_models:
     plt.imshow(img12)
     plt.show()
 '''
-def ss_list_text(X, Y):
-    #X = X.split(",")
-    #Y = Y.split(",")
-    count = 0
-    for x in X:
-        print(x)
-        if x in Y:
-            count+=1
-    #if len(X)!=0 and len(Y)!=0:
-    #print(count)
-    md = (count/len(X)+count/len(Y))/2
-    print(X)
-    print(len(Y))
-    return md
-    #return 0
-X = "12, 3"
-Y = "1, 2"
-print(ss_list_text(X, Y))
