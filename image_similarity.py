@@ -21,9 +21,9 @@ def load_model(model_name, include_top=True):
                 model = ResNet50(weights='imagenet', include_top=include_top)
             print(f">> '{model.name}' model successfully loaded")
         except:
-            print(f">> Error while loading model'{selected_model}")
+            print(f">> Error while loading model")
     else:
-        print(f">> Error: there is no '{selected_model}' in '{availabel_models}'")
+        print(f">> Error: there is no  in ")
     return model
 
 def get_img_size_model(model):
@@ -94,21 +94,3 @@ def concatenate_image(model, img_path_1, img_path_2):
     img2 = cv2.resize(cv2.imread(img_path_2), dsize=img_size_model)
     img12 = cv2.hconcat([img1, img2])
     return img12
-'''
-img_path_1 = './data_test/74.jpg'
-img_path_2 = './data_test/75.jpg'
-plt.imshow(cv2.imread(img_path_1))
-plt.show()
-plt.imshow(cv2.imread(img_path_2))
-plt.show()
-available_models = ['vgg16', 'resnet50']
-
-for selected_model in available_models:
-    print(selected_model)
-    model = load_model(selected_model, include_top=True)
-    cos = compute_similarity_img(model, img_path_1, img_path_2)
-    print(cos)
-    img12 = concatenate_image(model, img_path_1, img_path_2)
-    plt.imshow(img12)
-    plt.show()
-'''

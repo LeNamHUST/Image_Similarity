@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/image_similarity.iml" filepath="$PROJECT_DIR$/.idea/image_similarity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spam_anh.iml" filepath="$PROJECT_DIR$/.idea/spam_anh.iml" />
     </modules>
   </component>
 </project>
